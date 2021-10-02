@@ -11,10 +11,10 @@ class App extends Component {
                   ];
         return(
             <div id="main">
-               <ol id="relativeList">
+               <ol>
                  {relative.map(relatives => {
                   return(
-                    <li key={relatives.key}>{relatives.name}</li>
+                    <li id="relativeList" key={relatives.key}>{relatives.name}</li>
                     );
                      })}
                </ol>
